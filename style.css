@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+ background-color: aqua;
+ height: 60px;
+ color: black;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-size: 40px;
+ font-family: 'Roboto', sans-serif;
+}
+
+nav ul{
+    list-style: none;
+}
+.Container1{
+background-color: antiquewhite;
+margin-top: 20px;
+display: grid;
+grid-template-rows: repeat(3,10vw);
+grid-template-columns:repeat(3,10vw);
+}
+.game{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+justify-content: space-around;   
+position: relative;
+}
+.Container2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.box{
+    border:2px solid black;
+    font-size: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center
+    
+}
+.box:hover{
+    background-color: aquamarine;
+    cursor:pointer;
+}
+h4{
+    font-size: 3vw;
+}
+img{
+    height:20vw;
+}
+.bd-t{
+    border-top: 0;
+}
+.bd-r{
+    border-right: 0;
+}
+button{
+    height:2vw;
+    width:10vw;
+    color: rgb(31, 31, 35);
+    background-color: coral;
+    font-size:1.5vw;
+}
+@media screen and (max-width:800px){
+    .game{
+        flex-flow: column;
+    }
+}
+    
+/* .line{
+    background-color: black;
+    height: 5px;
+    position: absolute;
+    width: 24vw;
+    margin-right: 217vh;
+    transform: rotate(90deg); midd vert
+    /* transform: tranform(vw, vw) rotate(135deg); dia */
+    /* transform: tranform(vw, vw) rotate(135deg); dia */
+
+/* }  */
